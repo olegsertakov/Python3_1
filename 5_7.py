@@ -7,5 +7,5 @@ with open('text_7.json', 'w', encoding='utf-8') as test_fw:
                           len([float(i) for i in profit.values() if float(i) > 0]))}
         result = [profit, average_profit]
 
-    json.dump(result, test_fw, sort_keys=True, indent=4)
+    json.dump(result, test_fw)
 
